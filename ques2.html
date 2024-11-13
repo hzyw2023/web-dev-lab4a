@@ -14,6 +14,7 @@
   <script>
     function checkInput() {
       var userInput = document.getElementById('userInput').value;
+      userInput = parseInt(userInput);
       if (userInput > 10) {
         alert('The number is greater than 10');
       } else if (userInput < 10) {
