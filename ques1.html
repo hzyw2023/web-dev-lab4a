@@ -8,7 +8,6 @@
     #myElement {
       cursor: pointer;
     }
-
   </style>
   <title>Question 1</title>
 </head>
@@ -19,9 +18,9 @@
   </div>
 
   <script>
-    var myElement = document.getElementById('myElement');
+    let myElement = document.getElementById('myElement');
     myElement.addEventListener('click', function () {
-      var paragraph = myElement.querySelector('p');
+      let paragraph = myElement.querySelector('p');
       if (paragraph.textContent === 'Welcome to my website!') {
         paragraph.textContent = 'Hello there';
       } else {
