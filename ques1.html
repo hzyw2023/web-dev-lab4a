@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #myElement {
+      cursor: pointer;
+    }
+
+  </style>
+  <title>Question 1</title>
+</head>
+
+<body>
+  <div id="myElement">
+    <p>Welcome to my website!</p>
+  </div>
+
+  <script>
+    var myElement = document.getElementById('myElement');
+    myElement.addEventListener('click', function () {
+      var paragraph = myElement.querySelector('p');
+      if (paragraph.textContent === 'Welcome to my website!') {
+        paragraph.textContent = 'Hello there';
+      } else {
+        paragraph.textContent = 'Welcome to my website!';
+      }
+    });
+  </script>
+</body>
+
+</html>
