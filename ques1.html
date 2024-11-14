@@ -18,9 +18,13 @@
   </div>
 
   <script>
+    // Select the div element with id="myElement"
     let myElement = document.getElementById('myElement');
     myElement.addEventListener('click', function () {
+      // Select the paragraph element inside the div
       let paragraph = myElement.querySelector('p');
+      // Change the text content of the paragraph
+      // Use simple if-else statement to toggle between two texts
       if (paragraph.textContent === 'Welcome to my website!') {
         paragraph.textContent = 'Hello there';
       } else {

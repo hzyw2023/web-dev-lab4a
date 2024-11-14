@@ -13,8 +13,14 @@
 
   <script>
     function checkInput() {
+      // Get the value of the input field with id="userInput"
       var userInput = document.getElementById('userInput').value;
+      // parseInt() function parses a string and returns an integer.
+      // If the first character in the string can't be converted into a number, then it returns NaN.
       userInput = parseInt(userInput);
+      console.log(userInput);
+
+      // if the number is greater than 10, less than 10 or NaN
       if (userInput > 10) {
         alert('The number is greater than 10');
       } else if (userInput < 10) {
